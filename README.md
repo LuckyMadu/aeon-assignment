@@ -24,7 +24,7 @@
 | <img src="docs/screenshots/01-ios-transactions-feed.png" width="300" alt="iOS Transactions Feed Screen" /> | <img src="docs/screenshots/02-ios-transaction-details.png" width="300" alt="iOS Transaction Details Screen" /> |
 
 ### 🎥 iOS Walkthrough Video
-- **Walkthrough Video**: [▶️ View iOS Demo Video (`demo-ios.mp4`)](docs/screenshots/demo-ios.mp4) *(Optimized H.264, 4.7 MB)*
+- **Walkthrough Video**: [▶️ Watch iOS Demo Video (Google Drive)](#)
   - **Covered in Walkthrough**:
     1. Initial load with live Available Balance and Credit/Debit aggregates
     2. Real-time filtering chips (`All`, `Money In`, `Money Out`) with dynamic item counts
