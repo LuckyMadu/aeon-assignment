@@ -5,12 +5,37 @@
 ---
 
 ## 📱 Table of Contents
+- [App Previews & Demo](#-app-previews--demo)
 - [Features Overview](#-features-overview)
 - [Architecture & Directory Structure](#-architecture--directory-structure)
 - [Key Engineering Decisions & Trade-offs](#-key-engineering-decisions--trade-offs)
 - [Requirements Traceability Matrix](#-requirements-traceability-matrix)
 - [Prerequisites & Quickstart](#-prerequisites--quickstart)
 - [Running Automated Verification & Tests](#-running-automated-verification--tests)
+
+---
+
+## 📱 App Previews & Demo
+
+### iOS (iPhone 17 Pro)
+
+| Transactions Feed | Transaction Details (Receipt) |
+| :---: | :---: |
+| <img src="docs/screenshots/ios-transactions-feed.png" width="300" alt="iOS Transactions Feed Screen" /> | <img src="docs/screenshots/ios-transaction-details.png" width="300" alt="iOS Transaction Details Screen" /> |
+
+### 🎥 iOS Walkthrough Video
+- **Walkthrough Video**: [▶️ View iOS Demo Video (`demo-ios.mp4`)](docs/screenshots/demo-ios.mp4) *(Optimized H.264, 4.7 MB)*
+  - **Covered in Walkthrough**:
+    1. Initial load with live Available Balance and Credit/Debit aggregates
+    2. Real-time filtering chips (`All`, `Money In`, `Money Out`) with dynamic item counts
+    3. Instant search across recipient names, purpose descriptions, and reference IDs
+    4. Smooth navigation transition to Transaction Details
+    5. Complete digital receipt inspection and 1-tap reference ID copying
+    6. External receipt sharing via native system Share sheet
+    7. Pull-to-refresh feed update
+
+### Android
+> *Android screenshots & recording will be added shortly.*
 
 ---
 
