@@ -11,7 +11,6 @@
 - [Requirements Traceability Matrix](#-requirements-traceability-matrix)
 - [Prerequisites & Quickstart](#-prerequisites--quickstart)
 - [Running Automated Verification & Tests](#-running-automated-verification--tests)
-- [Git Commit History](#-git-commit-history)
 
 ---
 
@@ -200,22 +199,4 @@ Snapshots:   0 total
 
 ---
 
-## 📜 Git Commit History
-
-The repository follows semantic Conventional Commits to ensure clear, auditable development history:
-
-1. `feat(project): initialize React Native 0.86 TypeScript project with FlashList and Zustand`
-2. `feat(design-system): implement AEON Bank brand design tokens and atomic primitives`
-3. `feat(types): define transaction domain models, DTOs, and navigation contracts`
-4. `feat(services): implement mock banking API service with network simulation and normalizer`
-5. `feat(utils): add currency formatting, date formatting, and share sheet utilities`
-6. `feat(store): implement Zustand transaction store with search, filters, and metrics`
-7. `feat(components): implement TopAppBar, CategoryIcon, EmptyState, and ErrorBanner`
-8. `feat(features): implement TransactionsListScreen with FlashList and TransactionDetailScreen with Share`
-9. `feat(navigation): configure typed Native Stack Navigator with AEON banking theme`
-10. `test: add comprehensive unit test suite for formatters, services, and Zustand store`
-11. `docs: add comprehensive README with architecture, setup instructions, and design trade-offs`
-
----
-
-*Built with precision for the AEON Bank Engineering Team.*
+*Built with precision for AEON Bank.*
