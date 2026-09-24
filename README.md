@@ -35,7 +35,13 @@
     7. Pull-to-refresh feed update
 
 ### Android
-> *Android screenshots & recording will be added shortly.*
+
+| Transactions Feed | Transaction Details (Receipt) |
+| :---: | :---: |
+| <img src="docs/screenshots/03-android-transactions-feed.png" width="300" alt="Android Transactions Feed Screen" /> | <img src="docs/screenshots/04-android-transaction-details.png" width="300" alt="Android Transaction Details Screen" /> |
+
+### 🎥 Android Walkthrough Video
+- **Walkthrough Video**: [▶️ Watch Android Demo Video (Google Drive)](#)
 
 ---
 
