@@ -24,7 +24,7 @@
 | <img src="docs/screenshots/01-ios-transactions-feed.png" width="300" alt="iOS Transactions Feed Screen" /> | <img src="docs/screenshots/02-ios-transaction-details.png" width="300" alt="iOS Transaction Details Screen" /> |
 
 ### 🎥 iOS Walkthrough Video
-- **Walkthrough Video**: [▶️ Watch iOS Demo Video (Google Drive)](#)
+- **Walkthrough Video**: [▶️ Watch iOS Demo Video (Google Drive)](https://drive.google.com/file/d/16nc0sdsmyLnuwUBOSubpgv1UoOm2OMW9/view?usp=sharing)
   - **Covered in Walkthrough**:
     1. Initial load with live Available Balance and Credit/Debit aggregates
     2. Real-time filtering chips (`All`, `Money In`, `Money Out`) with dynamic item counts
@@ -41,7 +41,7 @@
 | <img src="docs/screenshots/03-android-transactions-feed.png" width="300" alt="Android Transactions Feed Screen" /> | <img src="docs/screenshots/04-android-transaction-details.png" width="300" alt="Android Transaction Details Screen" /> |
 
 ### 🎥 Android Walkthrough Video
-- **Walkthrough Video**: [▶️ Watch Android Demo Video (Google Drive)](#)
+- **Walkthrough Video**: [▶️ Watch Android Demo Video (Google Drive)](https://drive.google.com/file/d/1M3TXlv6gGJDT5RIEgQrPA5XOAVYl8rl0/view?usp=sharing)
 
 ---
 
