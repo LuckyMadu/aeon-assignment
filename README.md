@@ -23,25 +23,23 @@
 | :---: | :---: |
 | <img src="docs/screenshots/01-ios-transactions-feed.png" width="300" alt="iOS Transactions Feed Screen" /> | <img src="docs/screenshots/02-ios-transaction-details.png" width="300" alt="iOS Transaction Details Screen" /> |
 
-### 🎥 iOS Walkthrough Video
-- **Walkthrough Video**: [▶️ Watch iOS Demo Video (Google Drive)](https://drive.google.com/file/d/16nc0sdsmyLnuwUBOSubpgv1UoOm2OMW9/view?usp=sharing)
-  - **Covered in Walkthrough**:
-    1. Initial load with live Available Balance and Credit/Debit aggregates
-    2. Real-time filtering chips (`All`, `Money In`, `Money Out`) with dynamic item counts
-    3. Instant search across recipient names, purpose descriptions, and reference IDs
-    4. Smooth navigation transition to Transaction Details
-    5. Complete digital receipt inspection and 1-tap reference ID copying
-    6. External receipt sharing via native system Share sheet
-    7. Pull-to-refresh feed update
-
 ### Android
 
 | Transactions Feed | Transaction Details (Receipt) |
 | :---: | :---: |
 | <img src="docs/screenshots/03-android-transactions-feed.png" width="300" alt="Android Transactions Feed Screen" /> | <img src="docs/screenshots/04-android-transaction-details.png" width="300" alt="Android Transaction Details Screen" /> |
 
-### 🎥 Android Walkthrough Video
-- **Walkthrough Video**: [▶️ Watch Android Demo Video (Google Drive)](https://drive.google.com/file/d/1M3TXlv6gGJDT5RIEgQrPA5XOAVYl8rl0/view?usp=sharing)
+### 🎥 Walkthrough Video Demos
+- **iOS Recording**: [▶️ Watch iOS Demo Video (Google Drive)](https://drive.google.com/file/d/16nc0sdsmyLnuwUBOSubpgv1UoOm2OMW9/view?usp=sharing)
+- **Android Recording**: [▶️ Watch Android Demo Video (Google Drive)](https://drive.google.com/file/d/1M3TXlv6gGJDT5RIEgQrPA5XOAVYl8rl0/view?usp=sharing)
+
+#### Key Scenarios Covered in Walkthrough:
+1. **Initial Feed Load & Balance**: Live Available Balance and Credit/Debit aggregate calculations.
+2. **Real-time Filter Chips**: Live toggling between `All`, `Money In`, and `Money Out` with dynamic count badges.
+3. **Instant Search**: Real-time filtering across recipient name, transfer purpose, and reference ID.
+4. **Transaction Details Navigation**: Smooth transition to the official digital receipt layout.
+5. **Receipt Actions**: 1-tap Reference ID copy with visual feedback, and external receipt sharing via native system Share sheet.
+6. **Pull-to-Refresh**: Seamless gesture-based reload simulating network fetch.
 
 ---
 
