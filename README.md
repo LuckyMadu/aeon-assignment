@@ -175,7 +175,7 @@ src/
 ### Installation
 ```bash
 # 1. Clone repository
-git clone <repository-url>
+git clone https://github.com/LuckyMadu/aeon-assignment.git
 cd aeon-assignment
 
 # 2. Install JavaScript dependencies
