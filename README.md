@@ -21,7 +21,7 @@
 
 | Transactions Feed | Transaction Details (Receipt) |
 | :---: | :---: |
-| <img src="docs/screenshots/ios-transactions-feed.png" width="300" alt="iOS Transactions Feed Screen" /> | <img src="docs/screenshots/ios-transaction-details.png" width="300" alt="iOS Transaction Details Screen" /> |
+| <img src="docs/screenshots/01-ios-transactions-feed.png" width="300" alt="iOS Transactions Feed Screen" /> | <img src="docs/screenshots/02-ios-transaction-details.png" width="300" alt="iOS Transaction Details Screen" /> |
 
 ### 🎥 iOS Walkthrough Video
 - **Walkthrough Video**: [▶️ View iOS Demo Video (`demo-ios.mp4`)](docs/screenshots/demo-ios.mp4) *(Optimized H.264, 4.7 MB)*
