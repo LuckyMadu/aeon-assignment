@@ -1,23 +1,21 @@
 import React, { useState } from 'react';
 import {
   View,
-  StyleSheet,
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { TransactionDetailScreenProps } from '../../../types/navigation';
-import { colors } from '../../../design-system/tokens/colors';
-import { spacing } from '../../../design-system/tokens/spacing';
-import { radii } from '../../../design-system/tokens/radii';
-import { Text } from '../../../design-system/ui/Text';
-import { Button } from '../../../design-system/ui/Button';
-import { TopAppBar } from '../../../components/TopAppBar';
-import { ReceiptHero } from '../components/ReceiptHero';
-import { DetailItem } from '../components/DetailItem';
-import { formatCurrency } from '../../../utils/currencyFormatter';
-import { formatDisplayDateTime } from '../../../utils/dateFormatter';
-import { shareTransactionReceipt } from '../../../utils/shareReceipt';
+import { TransactionDetailScreenProps } from '../../types/navigation';
+import { Text } from '../../design-system/ui/Text';
+import { Button } from '../../design-system/ui/Button';
+import { TopAppBar } from '../../components/TopAppBar';
+import { ReceiptHero } from './components/ReceiptHero';
+import { DetailItem } from './components/DetailItem';
+import { formatCurrency } from '../../utils/currencyFormatter';
+import { formatDisplayDateTime } from '../../utils/dateFormatter';
+import { shareTransactionReceipt } from '../../utils/shareReceipt';
+import { spacing } from '../../design-system/tokens/spacing';
+import { styles } from './TransactionDetailScreen.styles';
 
 export const TransactionDetailScreen: React.FC<TransactionDetailScreenProps> = ({
   route,
@@ -91,13 +89,7 @@ export const TransactionDetailScreen: React.FC<TransactionDetailScreenProps> = (
           {/* Receipt Hero Summary */}
           <ReceiptHero transaction={transaction} />
 
-          {/* Detailed Breakdown Required by PDF:
-              - referenceId
-              - date
-              - recipient name
-              - transfer amount
-              - transfer name / type
-          */}
+          {/* Detailed Breakdown Required by PDF */}
           <View style={styles.detailsList}>
             <DetailItem
               label="Reference ID"
@@ -179,86 +171,3 @@ export const TransactionDetailScreen: React.FC<TransactionDetailScreenProps> = (
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: colors.bg.root,
-  },
-  headerShareBtn: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: colors.brand.subtle,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  headerShareIcon: {
-    fontSize: 16,
-    color: colors.brand.primary,
-    fontWeight: '700',
-  },
-  scrollContent: {
-    padding: spacing.lg,
-  },
-  receiptContainer: {
-    backgroundColor: colors.bg.surface,
-    borderRadius: radii.xl,
-    paddingHorizontal: spacing.xl,
-    paddingTop: spacing.lg,
-    paddingBottom: spacing.xl,
-    borderWidth: 1,
-    borderColor: colors.border.subtle,
-    shadowColor: '#0F172A',
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.08,
-    shadowRadius: 16,
-    elevation: 4,
-  },
-  bankHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingBottom: spacing.sm,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.border.subtle,
-  },
-  bankTitle: {
-    color: colors.brand.primary,
-    fontWeight: '800',
-    letterSpacing: 0.5,
-  },
-  detailsList: {
-    marginTop: spacing.sm,
-  },
-  securityFooter: {
-    marginTop: spacing.xl,
-    paddingTop: spacing.md,
-    borderTopWidth: 1,
-    borderTopColor: colors.border.subtle,
-    borderStyle: 'dashed',
-  },
-  securityText: {
-    textAlign: 'center',
-    lineHeight: 18,
-  },
-  bottomDock: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    backgroundColor: colors.bg.surface,
-    borderTopWidth: 1,
-    borderTopColor: colors.border.subtle,
-    paddingTop: spacing.md,
-    paddingHorizontal: spacing.lg,
-    flexDirection: 'row',
-    gap: spacing.md,
-  },
-  shareButton: {
-    flex: 2,
-  },
-  doneButton: {
-    flex: 1,
-  },
-});

@@ -1,8 +1,8 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../types/navigation';
-import { TransactionsListScreen } from '../features/transactions/screens/TransactionsListScreen';
-import { TransactionDetailScreen } from '../features/transaction-detail/screens/TransactionDetailScreen';
+import { TransactionsListScreen } from '../features/transactions';
+import { TransactionDetailScreen } from '../features/transaction-detail';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 

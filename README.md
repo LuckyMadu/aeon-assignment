@@ -77,16 +77,25 @@ src/
 ├── components/           # Shared UI components (TopAppBar, CategoryIcon, EmptyState)
 └── features/             # Feature slices
     ├── transactions/
-    │   ├── screens/TransactionsListScreen.tsx
-    │   └── components/
-    │       ├── BalanceCard.tsx
-    │       ├── FilterBar.tsx
-    │       └── TransactionRow.tsx
+    │   ├── TransactionsListScreen.tsx        # Screen component (no redundant folder nesting)
+    │   ├── TransactionsListScreen.styles.ts # Companion styles (separation of concerns)
+    │   ├── components/
+    │   │   ├── BalanceCard.tsx
+    │   │   ├── BalanceCard.styles.ts
+    │   │   ├── FilterBar.tsx
+    │   │   ├── FilterBar.styles.ts
+    │   │   ├── TransactionRow.tsx
+    │   │   └── TransactionRow.styles.ts
+    │   └── index.ts
     └── transaction-detail/
-        ├── screens/TransactionDetailScreen.tsx
-        └── components/
-            ├── DetailItem.tsx
-            └── ReceiptHero.tsx
+        ├── TransactionDetailScreen.tsx       # Screen component
+        ├── TransactionDetailScreen.styles.ts# Companion styles
+        ├── components/
+        │   ├── DetailItem.tsx
+        │   ├── DetailItem.styles.ts
+        │   ├── ReceiptHero.tsx
+        │   └── ReceiptHero.styles.ts
+        └── index.ts
 ```
 
 ---

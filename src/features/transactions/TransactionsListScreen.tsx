@@ -1,25 +1,24 @@
 import React, { useEffect, useCallback, useMemo } from 'react';
 import {
   View,
-  StyleSheet,
   RefreshControl,
   ActivityIndicator,
 } from 'react-native';
 import { FlashList } from '@shopify/flash-list';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { TransactionsListScreenProps } from '../../../types/navigation';
-import { Transaction } from '../../../types/transaction';
-import { useTransactionStore } from '../../../store/useTransactionStore';
-import { colors } from '../../../design-system/tokens/colors';
-import { spacing } from '../../../design-system/tokens/spacing';
-import { Text } from '../../../design-system/ui/Text';
-import { SearchField } from '../../../design-system/ui/SearchField';
-import { TopAppBar } from '../../../components/TopAppBar';
-import { EmptyState } from '../../../components/EmptyState';
-import { ErrorBanner } from '../../../components/ErrorBanner';
-import { BalanceCard } from '../components/BalanceCard';
-import { FilterBar } from '../components/FilterBar';
-import { TransactionRow } from '../components/TransactionRow';
+import { TransactionsListScreenProps } from '../../types/navigation';
+import { Transaction } from '../../types/transaction';
+import { useTransactionStore } from '../../store/useTransactionStore';
+import { colors } from '../../design-system/tokens/colors';
+import { Text } from '../../design-system/ui/Text';
+import { SearchField } from '../../design-system/ui/SearchField';
+import { TopAppBar } from '../../components/TopAppBar';
+import { EmptyState } from '../../components/EmptyState';
+import { ErrorBanner } from '../../components/ErrorBanner';
+import { BalanceCard } from './components/BalanceCard';
+import { FilterBar } from './components/FilterBar';
+import { TransactionRow } from './components/TransactionRow';
+import { styles } from './TransactionsListScreen.styles';
 
 const keyExtractor = (item: Transaction) => item.refId;
 
@@ -188,44 +187,3 @@ export const TransactionsListScreen: React.FC<TransactionsListScreenProps> = ({
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: colors.bg.root,
-  },
-  searchContainer: {
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.sm,
-    backgroundColor: colors.bg.surface,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.border.subtle,
-  },
-  headerContainer: {
-    paddingTop: spacing.lg,
-  },
-  sectionHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.sm,
-    backgroundColor: colors.bg.root,
-  },
-  sectionTitle: {
-    color: colors.text.primary,
-    fontWeight: '700',
-  },
-  loadingContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: spacing.xxl,
-  },
-  loadingText: {
-    marginTop: spacing.md,
-  },
-  listContent: {
-    paddingBottom: spacing.xxxl,
-  },
-});

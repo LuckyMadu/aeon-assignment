@@ -1,8 +1,8 @@
 import React from 'react';
-import { View, StyleSheet, ScrollView } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import { TransactionFilterType } from '../../../types/transaction';
-import { spacing } from '../../../design-system/tokens/spacing';
 import { Chip } from '../../../design-system/ui/Chip';
+import { styles } from './FilterBar.styles';
 
 export interface FilterBarProps {
   selectedFilter: TransactionFilterType;
@@ -51,16 +51,3 @@ export const FilterBar: React.FC<FilterBarProps> = ({
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    marginBottom: spacing.md,
-  },
-  scrollContent: {
-    paddingHorizontal: spacing.lg,
-    flexDirection: 'row',
-  },
-  chip: {
-    marginRight: spacing.sm,
-  },
-});

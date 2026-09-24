@@ -1,3 +1,3 @@
-export * from './screens/TransactionDetailScreen';
+export * from './TransactionDetailScreen';
 export * from './components/ReceiptHero';
 export * from './components/DetailItem';
