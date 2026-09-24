@@ -1,13 +1,13 @@
 import { TransactionsApiResponse } from '../types/transaction';
 
 /**
- * Exact mock response specified in AEON Bank Mobile Engineer Assessment PDF,
- * supplemented with realistic Islamic digital banking transactions mentioned
- * in the problem statement (fixed deposit profit, utility payment, DuitNow transfer).
+ * Mock transaction dataset simulating AEON Bank core banking API response.
+ * Features incoming credits (salary, bonuses, profit sharing) and outgoing debits
+ * (invoices, refunds, utility bills, DuitNow transfers).
  */
 export const MOCK_TRANSACTIONS_RESPONSE: TransactionsApiResponse = {
   data: [
-    // 1. Exact PDF prompt transaction 1
+    // Inflow: Salary credit
     {
       refId: '123ABC',
       transferDate: '2024-10-15T12:34:56Z',
@@ -15,7 +15,7 @@ export const MOCK_TRANSACTIONS_RESPONSE: TransactionsApiResponse = {
       transferName: 'Salary Payment',
       amount: 1500.0,
     },
-    // 2. Exact PDF prompt transaction 2
+    // Inflow: Invoice settlement
     {
       refId: '456DEF',
       transferDate: '2024-09-21T09:12:45Z',
@@ -23,7 +23,7 @@ export const MOCK_TRANSACTIONS_RESPONSE: TransactionsApiResponse = {
       transferName: 'Invoice Payment',
       amount: 2300.75,
     },
-    // 3. Exact PDF prompt transaction 3 (Refund - negative amount)
+    // Outflow: Merchant refund adjustment (negative amount)
     {
       refId: '789GHI',
       transferDate: '2024-10-05T16:18:30Z',
@@ -31,7 +31,7 @@ export const MOCK_TRANSACTIONS_RESPONSE: TransactionsApiResponse = {
       transferName: 'Refund',
       amount: -500.0,
     },
-    // 4. Exact PDF prompt transaction 4
+    // Inflow: Performance bonus
     {
       refId: '101JKL',
       transferDate: '2024-08-30T11:47:22Z',
@@ -39,8 +39,7 @@ export const MOCK_TRANSACTIONS_RESPONSE: TransactionsApiResponse = {
       transferName: 'Bonus Payment',
       amount: 1200.0,
     },
-    // Supplementary transactions explicitly covering:
-    // "money coming in from fixed deposits, profits, transferring out, etc."
+    // Inflow: Fixed deposit profit sharing
     {
       refId: '202MNO',
       transferDate: '2024-10-20T08:15:00Z',
@@ -48,6 +47,7 @@ export const MOCK_TRANSACTIONS_RESPONSE: TransactionsApiResponse = {
       transferName: 'Fixed Deposit Profit',
       amount: 350.5,
     },
+    // Outflow: Utility payment
     {
       refId: '303PQR',
       transferDate: '2024-10-18T14:22:10Z',
@@ -55,6 +55,7 @@ export const MOCK_TRANSACTIONS_RESPONSE: TransactionsApiResponse = {
       transferName: 'Utility Bill Payment',
       amount: -185.6,
     },
+    // Outflow: DuitNow peer-to-peer transfer
     {
       refId: '404STU',
       transferDate: '2024-09-15T10:05:40Z',
@@ -62,6 +63,7 @@ export const MOCK_TRANSACTIONS_RESPONSE: TransactionsApiResponse = {
       transferName: 'DuitNow Transfer Out',
       amount: -250.0,
     },
+    // Outflow: Retail POS purchase
     {
       refId: '505VWX',
       transferDate: '2024-08-14T17:40:15Z',

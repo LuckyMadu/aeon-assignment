@@ -89,7 +89,7 @@ export const TransactionDetailScreen: React.FC<TransactionDetailScreenProps> = (
           {/* Receipt Hero Summary */}
           <ReceiptHero transaction={transaction} />
 
-          {/* Detailed Breakdown Required by PDF */}
+          {/* Transaction Details Breakdown */}
           <View style={styles.detailsList}>
             <DetailItem
               label="Reference ID"

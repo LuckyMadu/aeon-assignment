@@ -1,6 +1,6 @@
 # AEON Bank Mobile Application
 
-> A React Native mobile banking application built for the **AEON Bank Mobile Engineer Assessment**. Enables digital banking customers to inspect incoming and outgoing transactions, view transaction details, and share official transfer receipts externally.
+> A production-grade React Native digital banking application for **AEON Bank**. Enables customers to monitor incoming/outgoing transaction feeds, inspect detailed receipts, and share transfer confirmations.
 
 ---
 
@@ -66,7 +66,7 @@ src/
 │   └── navigation.ts     # RootStackParamList & screen prop bindings
 ├── services/             # Networking and data normalizers
 │   ├── api.ts            # Banking API client with network delay simulation
-│   ├── mockData.ts       # Exact assessment BE response + realistic banking cases
+│   ├── mockData.ts       # Mock banking transaction payload & ledger data
 │   └── transactionNormalizer.ts
 ├── store/                # Zustand state management
 │   └── useTransactionStore.ts # Centralized store for transactions, filters, metrics
@@ -120,7 +120,7 @@ src/
 
 ## 📋 Requirements Traceability Matrix
 
-| Requirement from Assessment PDF | Component / Module | Test Coverage |
+| Feature & Capability | Component / Module | Test Coverage |
 | :--- | :--- | :--- |
 | **Incoming & Outgoing Transactions** | `src/features/transactions/components/BalanceCard.tsx` | `useTransactionStore.test.ts` |
 | **Transfer Details (Name, Party)** | `src/features/transactions/components/TransactionRow.tsx` | `transactionNormalizer.test.ts` |
@@ -202,7 +202,7 @@ Snapshots:   0 total
 
 ## 📜 Git Commit History
 
-The repository follows semantic Conventional Commits to clearly document the candidate's engineering thought process:
+The repository follows semantic Conventional Commits to ensure clear, auditable development history:
 
 1. `feat(project): initialize React Native 0.86 TypeScript project with FlashList and Zustand`
 2. `feat(design-system): implement AEON Bank brand design tokens and atomic primitives`
