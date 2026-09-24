@@ -59,7 +59,6 @@ export const styles = StyleSheet.create({
     paddingTop: spacing.md,
     borderTopWidth: 1,
     borderTopColor: colors.border.subtle,
-    borderStyle: 'dashed',
   },
   securityText: {
     textAlign: 'center',
