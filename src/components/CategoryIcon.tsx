@@ -1,8 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, ViewStyle } from 'react-native';
 import { TransactionCategory } from '../types/transaction';
-import { colors } from '../design-system/tokens/colors';
-import { radii } from '../design-system/tokens/radii';
 import { Text } from '../design-system/ui/Text';
 
 export interface CategoryIconProps {

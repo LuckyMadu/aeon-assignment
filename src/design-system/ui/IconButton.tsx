@@ -6,8 +6,6 @@ import {
   ViewStyle,
 } from 'react-native';
 import { colors } from '../tokens/colors';
-import { radii } from '../tokens/radii';
-import { spacing } from '../tokens/spacing';
 
 export interface IconButtonProps extends TouchableOpacityProps {
   icon: React.ReactNode;

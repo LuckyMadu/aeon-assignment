@@ -18,9 +18,10 @@ jest.mock('react-native-safe-area-context', () => {
   };
 });
 
-// React Native Share mock
-jest.mock('react-native/Libraries/Share/Share', () => ({
-  share: jest.fn().mockResolvedValue({ action: 'sharedAction' }),
-  dismissedAction: 'dismissedAction',
+// Mock Share in react-native
+const ReactNative = require('react-native');
+ReactNative.Share = {
+  share: jest.fn(() => Promise.resolve({ action: 'sharedAction' })),
   sharedAction: 'sharedAction',
-}));
+  dismissedAction: 'dismissedAction',
+};

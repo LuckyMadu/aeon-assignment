@@ -3,7 +3,6 @@ import { TouchableOpacity, View, StyleSheet } from 'react-native';
 import { Transaction } from '../../../types/transaction';
 import { colors } from '../../../design-system/tokens/colors';
 import { spacing } from '../../../design-system/tokens/spacing';
-import { radii } from '../../../design-system/tokens/radii';
 import { Text } from '../../../design-system/ui/Text';
 import { CategoryIcon } from '../../../components/CategoryIcon';
 import { formatCurrency } from '../../../utils/currencyFormatter';
