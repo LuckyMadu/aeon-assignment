@@ -1,0 +1,26 @@
+module.exports = {
+  preset: '@react-native/jest-preset',
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  moduleNameMapper: {
+    '^@components$': '<rootDir>/src/components',
+    '^@components/(.*)$': '<rootDir>/src/components/$1',
+    '^@design-system$': '<rootDir>/src/design-system',
+    '^@design-system/(.*)$': '<rootDir>/src/design-system/$1',
+    '^@features/(.*)$': '<rootDir>/src/features/$1',
+    '^@navigation$': '<rootDir>/src/navigation',
+    '^@navigation/(.*)$': '<rootDir>/src/navigation/$1',
+    '^@services$': '<rootDir>/src/services',
+    '^@services/(.*)$': '<rootDir>/src/services/$1',
+    '^@store$': '<rootDir>/src/store',
+    '^@store/(.*)$': '<rootDir>/src/store/$1',
+    '^@app-types$': '<rootDir>/src/types',
+    '^@app-types/(.*)$': '<rootDir>/src/types/$1',
+    '^@utils$': '<rootDir>/src/utils',
+    '^@utils/(.*)$': '<rootDir>/src/utils/$1',
+  },
+  transformIgnorePatterns: [
+    'node_modules/(?!(?:@react-native|react-native|@react-navigation|@shopify/flash-list|react-native-safe-area-context|react-native-screens|react-native-svg)/)',
+  ],
+  testMatch: ['**/__tests__/**/*.test.ts', '**/__tests__/**/*.test.tsx'],
+  clearMocks: true,
+};
