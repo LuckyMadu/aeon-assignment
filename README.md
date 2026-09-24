@@ -102,9 +102,9 @@ src/
 
 ## 💡 Key Engineering Decisions & Trade-offs
 
-### 1. State Management: Zustand (Explicit Bonus)
-* **Rationale**: The assessment specifically notes: *"using Zustand would be a bonus as well"*. 
-* **Advantage**: Compared to Redux Toolkit, Zustand requires zero boilerplate, eliminates reducer boilerplate, and leverages selector-based subscriptions to prevent unnecessary component re-renders.
+### 1. State Management: Zustand
+* **Rationale**: Lightweight, boilerplate-free state management tailored for responsive React Native banking applications.
+* **Advantage**: Compared to heavier alternatives, Zustand eliminates redundant reducer/action ceremony, provides ergonomic hook-based access, and leverages selector-based atomic subscriptions to prevent unnecessary component re-renders across the transaction feed.
 
 ### 2. High-Performance Virtualization: `@shopify/flash-list`
 * **Rationale**: React Native's standard `FlatList` can encounter blank cell flashing during rapid scrolling. FlashList recycles native cell views, delivering steady 60–120 FPS performance on transaction ledgers.
@@ -126,7 +126,7 @@ src/
 | **Transfer Details (Name, Party)** | `src/features/transactions/components/TransactionRow.tsx` | `transactionNormalizer.test.ts` |
 | **Date of Transfer (UTC)** | `src/utils/dateFormatter.ts` | `dateFormatter.test.ts` |
 | **Amount of Transfer (Currency, Sign)**| `src/utils/currencyFormatter.ts` | `currencyFormatter.test.ts` |
-| **Navigate to Detail Screen on Click** | `src/features/transactions/screens/TransactionsListScreen.tsx` | Type-checked via `RootStackParamList` |
+| **Navigate to Detail Screen on Click** | `src/features/transactions/TransactionsListScreen.tsx` | Type-checked via `RootStackParamList` |
 | **Detail: Reference ID (`refId`)** | `src/features/transaction-detail/components/DetailItem.tsx` | Verified on Detail screen |
 | **Detail: Recipient Name & Date** | `src/features/transaction-detail/components/DetailItem.tsx` | Verified on Detail screen |
 | **Detail: Transfer Amount & Status** | `src/features/transaction-detail/components/ReceiptHero.tsx` | `currencyFormatter.test.ts` |
