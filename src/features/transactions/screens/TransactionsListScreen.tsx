@@ -160,7 +160,6 @@ export const TransactionsListScreen: React.FC<TransactionsListScreenProps> = ({
           data={filteredTransactions}
           renderItem={renderItem}
           keyExtractor={keyExtractor}
-          estimatedItemSize={72}
           ListHeaderComponent={renderHeader}
           ListEmptyComponent={
             <EmptyState

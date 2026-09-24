@@ -31,7 +31,7 @@ export const DetailItem: React.FC<DetailItemProps> = ({
         <Text
           variant={isMonospace ? 'numericRegular' : 'bodyMedium'}
           tone={valueTone}
-          style={[styles.value, isMonospace && styles.monospace]}
+          style={[styles.value, isMonospace ? styles.monospace : undefined]}
         >
           {value}
         </Text>
@@ -39,13 +39,13 @@ export const DetailItem: React.FC<DetailItemProps> = ({
           <TouchableOpacity
             onPress={onCopy}
             activeOpacity={0.7}
-            style={[styles.copyButton, copyFeedback && styles.copyButtonActive]}
+            style={[styles.copyButton, copyFeedback ? styles.copyButtonActive : undefined]}
             accessibilityRole="button"
             accessibilityLabel={`Copy ${label}`}
           >
             <Text
               variant="captionMedium"
-              style={[styles.copyText, copyFeedback && styles.copyTextActive]}
+              style={[styles.copyText, copyFeedback ? styles.copyTextActive : undefined]}
             >
               {copyFeedback ? '✓ Copied' : 'Copy'}
             </Text>

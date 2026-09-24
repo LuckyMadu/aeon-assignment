@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text as RNText, TextProps as RNTextProps, StyleSheet, TextStyle } from 'react-native';
+import { Text as RNText, TextProps as RNTextProps, TextStyle, StyleProp } from 'react-native';
 import { colors } from '../tokens/colors';
 import { typography, TypographyVariant } from '../tokens/typography';
 
@@ -16,7 +16,7 @@ export type TextTone =
 export interface TextProps extends RNTextProps {
   variant?: TypographyVariant;
   tone?: TextTone;
-  style?: TextStyle | TextStyle[];
+  style?: StyleProp<TextStyle>;
   children?: React.ReactNode;
 }
 

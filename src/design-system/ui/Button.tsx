@@ -6,6 +6,7 @@ import {
   ActivityIndicator,
   ViewStyle,
   TextStyle,
+  StyleProp,
   View,
 } from 'react-native';
 import { colors } from '../tokens/colors';
@@ -21,8 +22,8 @@ export interface ButtonProps extends TouchableOpacityProps {
   loading?: boolean;
   disabled?: boolean;
   icon?: React.ReactNode;
-  style?: ViewStyle | ViewStyle[];
-  textStyle?: TextStyle | TextStyle[];
+  style?: StyleProp<ViewStyle>;
+  textStyle?: StyleProp<TextStyle>;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -44,7 +45,7 @@ export const Button: React.FC<ButtonProps> = ({
       style={[
         styles.base,
         styles[variant],
-        disabled && styles.disabled,
+        disabled ? styles.disabled : null,
         style,
       ]}
       accessibilityRole="button"
@@ -64,7 +65,7 @@ export const Button: React.FC<ButtonProps> = ({
             style={[
               styles.textBase,
               styles[`text_${variant}`],
-              disabled && styles.textDisabled,
+              disabled ? styles.textDisabled : null,
               textStyle,
             ]}
           >

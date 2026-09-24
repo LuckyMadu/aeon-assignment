@@ -62,7 +62,7 @@ export const useTransactionStore = create<TransactionStoreState>((set, get) => (
       const elapsed = Date.now() - startedAt;
       const delay = Math.max(0, 400 - elapsed);
       if (delay > 0) {
-        await new Promise((resolve) => setTimeout(resolve, delay));
+        await new Promise<void>((resolve) => setTimeout(() => resolve(), delay));
       }
 
       set({ transactions: normalized, isRefreshing: false });
